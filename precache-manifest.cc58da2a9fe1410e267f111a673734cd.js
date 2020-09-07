@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "768ab8cadf826d63a9d43bda3f81da2b",
+    "revision": "1b355571138451889d279f86b8181647",
     "url": "/Natours/index.html"
   },
   {
-    "revision": "06f6f31d082fbb05c01a",
-    "url": "/Natours/static/css/main.7e0bdd86.chunk.css"
+    "revision": "beee7024d638f42607cf",
+    "url": "/Natours/static/css/main.6642dea4.chunk.css"
   },
   {
     "revision": "b734b9baed44c164aa55",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Natours/static/js/2.53c1442d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "06f6f31d082fbb05c01a",
+    "revision": "beee7024d638f42607cf",
     "url": "/Natours/static/js/main.b159ce52.chunk.js"
   },
   {
@@ -54,6 +54,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "19f9a22f45a15fbf80d420862bcadffb",
     "url": "/Natours/static/media/nat-5.19f9a22f.jpg"
+  },
+  {
+    "revision": "1ef6d764fc819e080d40aa72dfe03aa6",
+    "url": "/Natours/static/media/nat-6.1ef6d764.jpg"
+  },
+  {
+    "revision": "5f846d16e6be9a73e6eb73f620379af2",
+    "url": "/Natours/static/media/nat-7.5f846d16.jpg"
   },
   {
     "revision": "14efd82b81787a9764b2cb7eb7afd3e8",
