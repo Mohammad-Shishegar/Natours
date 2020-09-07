@@ -1,0 +1,89 @@
+@import "../variable/variable.scss";
+.btn {
+    outline: none;
+    font-size: 16px;
+    font-family: "lato";
+    text-transform: uppercase;
+    border-radius: 23px;
+    letter-spacing: 1px;
+    border: none;
+    color: $color-grey-dark;
+    cursor: pointer;
+    transition: all 0.3s;
+    &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        display: inline-block;
+        position: absolute;
+        border-radius: 55px;
+        top: 0;
+        left: 0;
+        z-index: -10;
+        transition: all 0.3s;
+    }
+    &:hover {
+        transform: translateY(-4px);
+        &::after {
+            transform: scale(1.5);
+            opacity: 0;
+        }
+    }
+}
+
+.btn-2-green {
+    outline: none;
+    font-size: 18px;
+    font-family: "lato";
+    text-transform: uppercase;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    border: none;
+    color: $color-white;
+    background-color: $color-primary;
+    cursor: pointer;
+    transition: all 0.3s;
+    &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: $color-primary;
+        display: inline-block;
+        position: absolute;
+        border-radius: 55px;
+        top: 0;
+        left: 0;
+        z-index: -10;
+        transition: all 0.3s;
+    }
+    &:hover {
+        transform: translateY(-4px);
+        &::after {
+            transform: scale(1.5);
+            opacity: 0;
+        }
+    }
+}
+
+.greenBtn {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    color: $color-primary;
+    transition: all 0.3s;
+    border-bottom: 1px solid $color-primary;
+    .btn_icon {
+        margin-left: 5px;
+    }
+    &:hover {
+        background-color: $color-primary;
+        color: $color-white;
+        transform: scale(1.05);
+    }
+}

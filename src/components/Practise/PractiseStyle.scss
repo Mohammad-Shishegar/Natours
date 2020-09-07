@@ -1,0 +1,165 @@
+@import "../style/variable/variable.scss";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.section-tour__header {
+    width: 100%;
+    height: 70px;
+    background-color: pink;
+    overflow: hidden;
+    h2 {
+        text-align: center;
+        font-size: 35px;
+        padding-top: 15px;
+        -webkit-background-clip: text;
+        text-transform: uppercase;
+        font-family: "lato";
+        color: transparent;
+        transition: all 0.75s;
+        background-image: linear-gradient(to right, rgba($color-primary-dark, 0.801), rgba($color-primary, 0.801));
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.card {
+    width: 280px;
+    height: 520px;
+    border-radius: 5px;
+    margin-top: 55px;
+    margin-left: 120px;
+    box-shadow: 0 150px 150px rgba(0, 0, 0, 0.15);
+    &__front {
+        width: 280px;
+        height: 520px;
+        border-radius: 5px;
+        background-color: $color-grey-light-2;
+        position: relative;
+        transition: all 2s;
+        position: absolute;
+        backface-visibility: hidden;
+    }
+    &__back {
+        width: 280px;
+        backface-visibility: hidden;
+        border-radius: 5px;
+        height: 520px;
+        background-color: orange;
+        transform: rotateY(-180deg);
+        transition: all 2s;
+        &__1 {
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+        }
+        &__2 {
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+        }
+        &__3 {
+            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+        }
+    }
+    &:hover &__front {
+        transform: rotateY(180deg);
+    }
+    &:hover &__back {
+        transform: rotateY(0deg);
+    }
+    &__picture {
+        background-size: cover;
+        height: 13rem;
+        background-blend-mode: screen;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        &--1 {
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url("../../assets/image/nat-5.jpg");
+        }
+        &--2 {
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url("../../assets/image/nat-6.jpg");
+        }
+        &--3 {
+            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url("../../assets/image/nat-7.jpg");
+        }
+    }
+    &__heading {
+        font-size: 27px;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: right;
+        color: $color-white;
+        position: absolute;
+        top: 7rem;
+        right: 1rem;
+        width: 75%;
+    }
+    &__heading-span {
+        padding-bottom: 18px;
+        padding-top: 4px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 25px;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+        &--1 {
+            background-image: linear-gradient(to right bottom, rgba($color-secondary-light, 0.85), rgba($color-secondary-dark, 0.85));
+        }
+        &--2 {
+            background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.85), rgba($color-primary-dark, 0.85));
+        }
+        &--3 {
+            background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, 0.85), rgba($color-tertiary-dark, 0.85));
+        }
+    }
+    &__detail {
+        width: 100%;
+        p {
+            text-align: center;
+            font-size: 17px;
+            font-family: "lato";
+            letter-spacing: 1px;
+            margin-top: 30px;
+        }
+    }
+    &__price {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p:nth-child(1) {
+            font-size: 35px;
+            color: $color-white;
+            text-align: center;
+            font-family: "lato";
+        }
+        p:nth-child(2) {
+            font-size: 55px;
+            margin-top: 45px;
+            color: $color-white;
+            font-family: "lato";
+            text-align: center;
+        }
+        &__btn {
+            width: 150px;
+            height: 50px;
+            margin-top: 50px;
+            outline: none;
+            font-size: 16px;
+            font-family: "lato";
+            text-transform: uppercase;
+            border-radius: 23px;
+            letter-spacing: 1px;
+            border: none;
+            color: $color-grey-dark;
+            cursor: pointer;
+            transition: all 0.3s;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
