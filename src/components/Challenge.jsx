@@ -37,7 +37,7 @@ class Challenge extends Component {
                     <div className="section-about">
                         <h2 className="section-about__h2">Exiting tours for adventurous people</h2>
                         <div className="section-about__div">
-                            <div className="section-about__text">
+                            <div className="section-about section-about__text">
                                 <h3>you are going to fall in love with nature</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quis amet distinctio, earum harum perspiciatis atque consequatur? Earum inventore molestias quasi placeat nemo voluptatem exercitationem quidem, neque tempora vitae sapiente.</p>
                                 <h3>live adventures like you never have before</h3>
@@ -143,7 +143,7 @@ class Challenge extends Component {
                                         <p>5 day tours</p>
                                         <p>Up to 15 people</p>
                                         <p>3 tour guides</p>
-                                        <p>Sleep in cozy hotels</p>
+                                        <p>Sleep in provided tents</p>
                                         <p>Difficulty:hard</p>
                                     </div>
                                 </div>
@@ -155,6 +155,9 @@ class Challenge extends Component {
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div className="tour__btn">
+                            <button className="tour__btn__btn btn-2-green">discover all tours</button>
                         </div>
                     </div>
                     {/* section-story */}
